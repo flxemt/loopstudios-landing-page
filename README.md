@@ -23,12 +23,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](https://i.imgur.com/YE5QpLF.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/loopstudios-landing-page-using-tailwind-css-yFvlnogt9I](https://www.frontendmentor.io/solutions/loopstudios-landing-page-using-tailwind-css-yFvlnogt9I)
+- Live Site URL: [https://loopstudios-tailwind.netlify.app/](https://loopstudios-tailwind.netlify.app/)
 
 ## My process
 
