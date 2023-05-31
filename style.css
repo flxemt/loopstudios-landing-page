@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+  background-color: white;
+  width: 24px;
+  height: 2px;
+  transition: transform 0.2s;
+}
+
+.nav-link:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}

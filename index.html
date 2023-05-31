@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Frontend Mentor Challenge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Loopstudios landing page</title>
+    <script src="https://kit.fontawesome.com/56471ca088.js" crossorigin="anonymous" defer></script>
+  </head>
+  <body class="text-body leading-body">
+    <main>
+      <section class="hero px-6 pt-10 pb-[14.125rem] bg-hero-mobile bg-no-repeat bg-cover xl:bg-hero-desktop xl:pt-16 xl:pb-[9.125rem]">
+        <div class="max-w-container mx-auto">
+          <nav class="flex justify-between items-center relative z-10">
+            <img src="/logo.svg" class="w-[144px] xl:w-[192px]" alt="Logo" />
+            <button aria-label="Toggle menu" id="menu-btn" class="xl:hidden">
+              <img src="/icon-hamburger.svg" id="icon-hamburger" alt="Hamburger menu icon" aria-hidden="true" />
+              <img src="/icon-close.svg" id="icon-close" class="hidden" alt="Close icon" aria-hidden="true" />
+            </button>
+            <ul class="hidden text-white xl:flex gap-8">
+              <li class="nav-link"><a href="#">About</a></li>
+              <li class="nav-link"><a href="#">Careers</a></li>
+              <li class="nav-link"><a href="#">Events</a></li>
+              <li class="nav-link"><a href="#">Products</a></li>
+              <li class="nav-link"><a href="#">Support</a></li>
+            </ul>
+          </nav>
+          <div class="mt-[10.25rem] p-6 pt-[1.625rem] outline outline-[2px] outline-white max-w-[650px] xl:p-10 xl:mt-[8.125rem]">
+            <h1 class="text-white font-heading text-h3 leading-h3 uppercase xl:text-h1 xl:leading-h1">Immersive experiences that deliver</h1>
+          </div>
+          <div class="absolute w-full bg-black text-white h-full left-0 top-0 flex items-center px-6 uppercase text-h5 leading-h5 font-heading invisilbe opacity-0 transition-opacity xl:hidden" id="mobile-nav">
+            <ul class="flex flex-col gap-6">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="px-6 mt-24 xl:mt-40">
+        <div class="max-w-container mx-auto flex flex-col gap-12 xl:flex-row xl:items-end xl:gap-0">
+          <picture>
+            <source srcset="/desktop/image-interactive.jpg" media="(min-width: 1110px)" />
+            <img src="/mobile/image-interactive.jpg" alt="A man in VR illustration" />
+          </picture>
+          <div class="bg-white text-center px-6 xl:max-w-[541px] xl:p-0 xl:pt-24 xl:pl-24 xl:-ml-40 xl:text-left">
+            <h2 class="font-heading text-h4 leading-h4 uppercase xl:text-h2 xl:leading-h2">The leader in interactive VR</h2>
+            <p class="mt-4 text-very-dark-gray xl:mt-6">Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have transformed businesses through digital experiences that bind to their brand.</p>
+          </div>
+        </div>
+      </section>
+      <section class="px-6 mt-24 xl:mt-[11.5rem]">
+        <div class="max-w-container mx-auto">
+          <div class="flex flex-col justify-between items-center text-center xl:flex-row xl:text-left">
+            <h2 class="uppercase font-heading text-h4 leading-h4 xl:text-h2 xl:leading-h2">Our creations</h2>
+            <a href="#" class="hidden uppercase tracking-[5px] text-[0.875rem] leading-[0.875rem] border-[1px] border-black px-10 py-[0.8125rem] xl:inline-block hover:bg-black hover:text-white transition-colors">See all</a>
+          </div>
+          <div class="mt-6 grid grid-cols-default gap-6 text-white font-heading uppercase text-h5 leading-h5 xl:gap-[1.875rem] xl:mt-20 xl:text-h4 xl:leading-h4">
+            <a href="#" class="group block relative">
+              <picture>
+                <source srcset="/desktop/image-deep-earth.jpg" media="(min-width: 1110px)" />
+                <img src="/mobile/image-deep-earth.jpg" alt="Deep Earth" />
+              </picture>
+              <div class="absolute w-full h-full bg-overlay-mobile top-0 left-0 px-5 pb-5 flex flex-col justify-end xl:bg-overlay-desktop xl:px-10 xl:pb-8 group-hover:bg-hover group-hover:text-black transition-colors">
+                <div>Deep</div>
+                <div>Earth</div>
+              </div>
+            </a>
+            <a href="#" class="group block relative">
+              <picture>
+                <source srcset="/desktop/image-night-arcade.jpg" media="(min-width: 1110px)" />
+                <img src="/mobile/image-night-arcade.jpg" alt="Night Arcade" />
+              </picture>
+              <div class="absolute w-full h-full bg-overlay-mobile top-0 left-0 px-5 pb-5 flex flex-col justify-end xl:bg-overlay-desktop xl:px-10 xl:pb-8 group-hover:bg-hover group-hover:text-black transition-colors">
+                <div>Night</div>
+                <div>Arcade</div>
+              </div>
+            </a>
+            <a href="#" class="group block relative">
+              <picture>
+                <source srcset="/desktop/image-soccer-team.jpg" media="(min-width: 1110px)" />
+                <img src="/mobile/image-soccer-team.jpg" alt="Soccer Team VR" />
+              </picture>
+              <div class="absolute w-full h-full bg-overlay-mobile top-0 left-0 px-5 pb-5 flex flex-col justify-end xl:bg-overlay-desktop xl:px-10 xl:pb-8 group-hover:bg-hover group-hover:text-black transition-colors">
+                <div>Soccer</div>
+                <div>Team VR</div>
+              </div>
+            </a>
+            <a href="#" class="group block relative">
+              <picture>
+                <source srcset="/desktop/image-grid.jpg" media="(min-width: 1110px)" />
+                <img src="/mobile/image-grid.jpg" alt="The Grid" />
+              </picture>
+              <div class="absolute w-full h-full bg-overlay-mobile top-0 left-0 px-5 pb-5 flex flex-col justify-end xl:bg-overlay-desktop xl:px-10 xl:pb-8 group-hover:bg-hover group-hover:text-black transition-colors">
+                <div>The</div>
+                <div>Grid</div>
+              </div>
+            </a>
+            <a href="#" class="group block relative">
+              <picture>
+                <source srcset="/desktop/image-from-above.jpg" media="(min-width: 1110px)" />
+                <img src="/mobile/image-from-above.jpg" alt="From up Above VR" />
+              </picture>
+              <div class="absolute w-full h-full bg-overlay-mobile top-0 left-0 px-5 pb-5 flex flex-col justify-end xl:bg-overlay-desktop xl:px-10 xl:pb-8 group-hover:bg-hover group-hover:text-black transition-colors">
+                <div>From up</div>
+                <div>Above VR</div>
+              </div>
+            </a>
+            <a href="#" class="group block relative">
+              <picture>
+                <source srcset="/desktop/image-pocket-borealis.jpg" media="(min-width: 1110px)" />
+                <img src="/mobile/image-pocket-borealis.jpg" alt="Pocket Borealis" />
+              </picture>
+              <div class="absolute w-full h-full bg-overlay-mobile top-0 left-0 px-5 pb-5 flex flex-col justify-end xl:bg-overlay-desktop xl:px-10 xl:pb-8 group-hover:bg-hover group-hover:text-black transition-colors">
+                <div>Pocket</div>
+                <div>Borealis</div>
+              </div>
+            </a>
+            <a href="#" class="group block relative">
+              <picture>
+                <source srcset="/desktop/image-curiosity.jpg" media="(min-width: 1110px)" />
+                <img src="/mobile/image-curiosity.jpg" alt="The Curiosity" />
+              </picture>
+              <div class="absolute w-full h-full bg-overlay-mobile top-0 left-0 px-5 pb-5 flex flex-col justify-end xl:bg-overlay-desktop xl:px-10 xl:pb-8 group-hover:bg-hover group-hover:text-black transition-colors">
+                <div>The</div>
+                <div>Curiosity</div>
+              </div>
+            </a>
+            <a href="#" class="group block relative">
+              <picture>
+                <source srcset="/desktop/image-fisheye.jpg" media="(min-width: 1110px)" />
+                <img src="/mobile/image-fisheye.jpg" alt="The Curiosity" />
+              </picture>
+              <div class="absolute w-full h-full bg-overlay-mobile top-0 left-0 px-5 pb-5 flex flex-col justify-end xl:bg-overlay-desktop xl:px-10 xl:pb-8 group-hover:bg-hover group-hover:text-black transition-colors">
+                <div>Make it</div>
+                <div>Fisheye</div>
+              </div>
+            </a>
+          </div>
+          <div class="mt-[2.125rem] flex justify-center xl:hidden">
+            <a href="#" class="inline-block uppercase tracking-[5px] text-[0.875rem] leading-[0.875rem] border-[1px] border-black px-10 py-[0.8125rem] hover:bg-black hover:text-white transition-colors">See all</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="mt-24 px-12 py-14 bg-black text-white xl:mt-[11.5rem] xl:py-11">
+      <div class="max-w-container mx-auto flex flex-col gap-12 xl:gap-6 xl:flex-row xl:justify-between">
+        <nav class="flex flex-col justify-between items-center gap-8 xl:items-start xl:gap-6">
+          <img src="/logo.svg" class="w-[144px]" alt="Logo" />
+          <ul class="text-center flex flex-col gap-4 xl:text-start xl:flex-row xl:gap-8">
+            <li class="nav-link"><a href="#">About</a></li>
+            <li class="nav-link"><a href="#">Careers</a></li>
+            <li class="nav-link"><a href="#">Events</a></li>
+            <li class="nav-link"><a href="#">Products</a></li>
+            <li class="nav-link"><a href="#">Support</a></li>
+          </ul>
+        </nav>
+        <div class="text-center flex flex-col justify-between gap-4 xl:gap-[0.875rem] xl:text-right">
+          <div class="flex justify-center gap-4 text-h5 leading-h5 xl:justify-end">
+            <a href="#" aria-label="Facebook" class="nav-link">
+              <i class="fa-brands fa-square-facebook"></i>
+            </a>
+            <a href="#" aria-label="Twitter" class="nav-link">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#" aria-label="Pinterest" class="nav-link">
+              <i class="fa-brands fa-pinterest"></i>
+            </a>
+            <a href="#" aria-label="Instagram" class="nav-link">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+          <p class="text-dark-gray">© 2021 Loopstudios. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
